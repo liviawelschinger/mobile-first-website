@@ -85,8 +85,6 @@ h4{
 /* mobile styles */
 
 /* small tablet styles */
-
-/* small tablet styles */
 @media screen and (min-width: 620px) {
 
 }
@@ -104,3 +102,39 @@ h4{
     font-size: 20px;
   }
 }
+
+
+/* grid testing */
+/*.projects {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.projects img {
+  max-width: 100%;
+}
+
+.projects a {
+  text-align: center;
+  padding: 20px;
+}
+
+!* first child *!
+.projects a:nth-child(1) {
+  grid-column: 2/6;
+  grid-row: 1;
+}
+
+!* second child *!
+.projects a:nth-child(2) {
+  grid-column: 8/12;
+  grid-row: 1;
+}
+
+!* second child *!
+.projects a:nth-child(3) {
+  grid-column: 5/9;
+  grid-row: 2;
+}*/
+
