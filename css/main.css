@@ -91,6 +91,9 @@ h4 {
   grid-template-columns: repeat(8, 1fr);
   gap: 10px;
   overflow-x: hidden;
+  /* The CSS box-sizing property allows us to include the padding and border in an element's total width and height.*/
+  box-sizing: border-box;
+  padding: 0;
 }
 
 /* MENU STYLES */
@@ -313,10 +316,6 @@ h4 {
   margin: 10px auto;
 }
 
-ul {
-  margin: 40px 0;
-}
-
 #skills li {
   background: rgba(0,0,0,0.2);
   grid-column: span 4;
@@ -504,7 +503,7 @@ footer img {
   }
 
   #skills ul {
-    margin: 40px auto;
+   padding: 0;
   }
 
   #skills li {
