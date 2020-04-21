@@ -88,6 +88,16 @@ h4 {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 10px;
+  overflow-x: hidden;
+}
+
+.menu-wrap {
+  /* should be always on the top */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
 }
 
 .site-nav {
