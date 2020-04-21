@@ -9,17 +9,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
+<script>
+  /**
+   * Closes hamburger menu when a nav link is clicked
+   */
+  function closeMenu() {
+    // Uncheck checkbox with class name toggler in order to rotate hamburger menu back to initial state and close menu with nav links
+    document.getElementsByClassName('toggler')[0].checked = false;
+  }
+</script>
 
-<nav class="site-nav grid">
+<!--<nav class="site-nav grid">
   <h1>Cosmo Junkie</h1>
   <ul>
     <li><a href="#portfolio">Portfolio</a></li>
     <li><a href="#skill">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-</nav>
+</nav>-->
+<div class="menu-wrap">
+  <input type="checkbox" class="toggler">
+  <div class="hamburger"><div></div></div>
+  <div class="menu">
+    <div>
+      <div>
+        <ul>
+          <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+          <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 <section id="welcome" class="grid">
   <div class="welcome-text">
     <h2>Space Enthusiast<br />& JavaScript Developer</h2>
