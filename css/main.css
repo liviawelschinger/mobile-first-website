@@ -540,6 +540,16 @@ footer img {
     margin: 30px 0;
   }
 
+  #skills {
+    padding: 30px 20px;
+  }
+
+  #skills ul {
+    padding: 0px;
+    margin: 40px auto;
+  }
+
+
   footer {
     padding: 80px 0;
     background-size: 30%;
