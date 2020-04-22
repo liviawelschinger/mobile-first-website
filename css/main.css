@@ -234,8 +234,29 @@ h4 {
   color: #DDDBFF;
   text-decoration: none;
   transition: color 0.4s ease;
+  position: relative;
 }
 
+/* The ::before selector inserts something before the content of each selected element(s). */
+.menu-wrap .menu > div > div > ul > li > a::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  /* The scaleX() CSS function defines a transformation that resizes an element along the x-axis (horizontally). */
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  /* The transformation origin is the point around which a transformation is applied. */
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menu-wrap .menu > div > div > ul > li > a:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 .site-nav {
   margin: 0 20px;
